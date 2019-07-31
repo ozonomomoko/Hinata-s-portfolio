@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>1~20 periodic table</title>
+  </head>
+  
+  <body>
+
+ 
+    <script>
+	  var headingMessage =" <h1>Periodic Table 1~20</h1>" ;     
+	              document.write(headingMessage);
+                  document.write ("<br>");
+				  
+	   var mainMessage =" <p><strong>It help you study periodic table</strong>  <br>You can put element symbol or atomic number.(1~20)</p>" ;     
+	              document.write(mainMessage);
+                  document.write ("<br>");
+				  
+	var lastMessage =" <p>Please put this button.</p>" ;     
+	              document.write(lastMessage);
+                  document.write ("<br>");
+				  
+				  
+				  
+      function myFunction(){
+	 
+      var element = document.getElementById("atm").value;
+      
+	  //display element symbol or atomic number.
+   
+     switch ( element ) {
+        case "1" : document.write ("H");
+               document.write ("<br>");
+			   break;
+        case "2" : document.write ("He");
+               document.write ("<br>");
+			   break;
+        case "3" : document.write ("Li");
+               document.write ("<br>");
+			   break;
+        case "4" : document.write ("Be");
+               document.write ("<br>");
+			   break;
+        case "5" : document.write ("B");
+               document.write ("<br>");
+			   break;
+        case "6" : document.write ("C");
+               document.write ("<br>");
+			   break;
+        case "7" : document.write ("N");
+               document.write ("<br>");
+			   break;
+        case "8" : document.write ("O");
+               document.write ("<br>");
+			   break;
+        case "9" : document.write ("F");
+               document.write ("<br>");
+			   break;
+        case "10" : document.write ("Ne");
+               document.write ("<br>");
+			   break;
+        case "11" : document.write ("Na");
+               document.write ("<br>");
+			   break;
+        case "12" : document.write ("Mg");
+               document.write ("<br>");
+			   break;
+        case "13" : document.write ("Al");
+               document.write ("<br>");
+			   break;
+        case "14" : document.write ("Si");
+               document.write ("<br>");
+			   break;
+        case "15" : document.write ("P");
+               document.write ("<br>");
+			   break;
+        case "16" : document.write ("S");
+               document.write ("<br>");
+			   break;
+        case "17" : document.write ("Cl");
+               document.write ("<br>");
+			   break;
+        case "18" : document.write ("Ar");
+               document.write ("<br>");
+			   break;
+        case "19" : document.write ("K");
+               document.write ("<br>");
+			   break;
+        case "20" : document.write ("Ca");
+               document.write ("<br>");
+			   break;
+        case "H" : document.write ("1");
+               document.write ("<br>");
+			   break;
+        case "He" : document.write ("2");
+               document.write ("<br>");
+			   break;
+        case "Li" : document.write ("3");
+               document.write ("<br>");
+			   break;
+        case "Be" : document.write ("4");
+               document.write ("<br>");
+			   break;
+        case "Li" : document.write ("5");
+               document.write ("<br>");
+			   break;
+        case "C" : document.write ("6");
+               document.write ("<br>");
+			   break;
+        case "N" : document.write ("7");
+               document.write ("<br>");
+			   break;
+        case "O" : document.write ("8");
+               document.write ("<br>");
+			   break;
+        case "F" : document.write ("9");
+               document.write ("<br>");
+			   break;
+        case "Ne" : document.write ("10");
+               document.write ("<br>");
+			   break;
+        case "Na" : document.write ("11");
+               document.write ("<br>");
+			   break;
+        case "Mg" : document.write ("12");
+               document.write ("<br>");
+			   break;
+        case "Al" : document.write ("13");
+               document.write ("<br>");
+			   break;
+        case "Si" : document.write ("14");
+               document.write ("<br>");
+			   break;
+        case "P" : document.write ("15");
+               document.write ("<br>");
+			   break;
+        case "S" : document.write ("16");
+               document.write ("<br>");
+			   break;
+        case "Cl" : document.write ("17");
+               document.write ("<br>");
+			   break;
+        case "Ar" : document.write ("18");
+               document.write ("<br>");
+			   break;
+        case "K" : document.write ("19");
+               document.write ("<br>");
+			   break;
+        case "Ca" : document.write ("20");
+               document.write ("<br>");
+			   break;
+			   
+  
+  //display sentence if put symbol or number is not atomic number 1~20.
+  
+    default :
+	
+	errorfunction();
+	        break;
+      
+				  
+
+	 
+   }
+     function errorfunction(){
+		var errorMessage ="This symbol or number is not the Element that's atomic number is 1~20."       
+	              document.write(errorMessage);
+                  document.write ("<br>");
+	  }		  
+   };
+        </script>
+			<p></p>
+     
+	 <textarea id="atm" name="elements"></textarea>
+     <button type="button" onclick=myFunction()>What is this element?</button>
+     </body>
+</html>
